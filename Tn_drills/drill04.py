@@ -1,3 +1,4 @@
+# Manual string length
 def str_len(value):
     count = 0
     for character in value:
@@ -5,3 +6,11 @@ def str_len(value):
     return count
 
 print(str_len("Maxwell"))
+
+def reverse_string(value):
+    reverse_value = ""
+    for ch in value:
+        reverse_value = ch + reverse_value
+    return reverse_value
+
+print(reverse_string("maxwell"))
