@@ -11,3 +11,9 @@ def next_age(age_text):
     return next_year
 
 print(next_age("18"))
+
+# Fix Safe Divide
+def safe_divide(a, b):
+    return round(a/b, 2) if b != 0 else "Cannot divide by zero"
+
+print(safe_divide(8/2))
