@@ -21,3 +21,13 @@ def censor_words(text, banned_word):
     return text.replace(banned_word, "***")
 
 print(censor_words("This code is bad bad", "bad"))
+
+# To check if a word is a Keyword in python
+import keyword
+
+print(keyword.iskeyword("if"))
+print(keyword.iskeyword("hello"))
+print(keyword.iskeyword("and"))
+print(keyword.iskeyword("finally"))
+print(keyword.iskeyword("my_if"))
+
