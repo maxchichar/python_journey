@@ -7,6 +7,7 @@ def str_len(value):
 
 print(str_len("Maxwell"))
 
+# Reverse string
 def reverse_string(value):
     reverse_value = ""
     for ch in value:
@@ -14,3 +15,9 @@ def reverse_string(value):
     return reverse_value
 
 print(reverse_string("maxwell"))
+
+# Censor Words
+def censor_words(text, banned_word):
+    return text.replace(banned_word, "***")
+
+print(censor_words("This code is bad bad", "bad"))
