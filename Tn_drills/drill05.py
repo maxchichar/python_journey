@@ -16,7 +16,7 @@ print(next_age("18"))
 def safe_divide(a, b):
     return round(a/b, 2) if b != 0 else "Cannot divide by zero"
 
-print(safe_divide(8/2))
+print(safe_divide(8, 2))
 
 # Fix Index Lookup
 def get_item(items, index):
@@ -25,3 +25,19 @@ def get_item(items, index):
     return items[index]
 
 print(get_item(["chibueze", "charles", "maxwell"], 1))
+
+# Fix Broken Grades
+def grade_label(score):
+    if score < 0 or score > 100:
+        return "Invalid score"
+    match score:
+        case _ if 90 <= score <= 100:
+            return "A"
+        case _ if 80 <= score <= 89:
+            return "B"
+        case _ if 70 <= score <= 79:
+            return "C"
+        case _ if score < 70:
+            return "F"
+
+print(grade_label(77))
