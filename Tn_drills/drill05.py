@@ -17,3 +17,11 @@ def safe_divide(a, b):
     return round(a/b, 2) if b != 0 else "Cannot divide by zero"
 
 print(safe_divide(8/2))
+
+# Fix Index Lookup
+def get_item(items, index):
+    if index < 0 or index > len(items):
+        return "Index out of range"
+    return items[index]
+
+print(get_item(["chibueze", "charles", "maxwell"], 1))
