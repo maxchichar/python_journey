@@ -59,3 +59,18 @@ customer_name = customer_name.strip().capitalize()
 customer_types_label = str(input("Enter your order: "))
 customer_order = customer_types_label.strip().capitalize()
 print(f"Hello, {customer_name}! Your {customer_order} is ready.")
+
+# String Slicing
+slicing_word = "espresso"
+Last_word = slicing_word[-1]
+print(Last_word)
+
+chris_name = "Christopher"
+print(chris_name[0:5])
+
+# String Formatting
+str_name = "Alice"
+drink = "latte"
+drink_price = 4.50
+receipt = f"Order for {str_name}: {drink} - ${drink_price:.2f}"
+print(receipt)
