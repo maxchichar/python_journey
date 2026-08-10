@@ -48,3 +48,14 @@ for num in [1, 2, 3, 4, 5]:
     if num == 4:
         continue # continue is used for skipping in a loop while break stops the program.
     print(num)
+
+text = "maxwell"
+cap = text.capitalize()
+print(f"Capitalize: {cap}")
+
+# String Manipulation
+customer_name = str(input("Enter your name: "))
+customer_name = customer_name.strip().capitalize()
+customer_types_label = str(input("Enter your order: "))
+customer_order = customer_types_label.strip().capitalize()
+print(f"Hello, {customer_name}! Your {customer_order} is ready.")
