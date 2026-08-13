@@ -74,3 +74,48 @@ drink = "latte"
 drink_price = 4.50
 receipt = f"Order for {str_name}: {drink} - ${drink_price:.2f}"
 print(receipt)
+
+raw_order_list = "latte,espresso,mocha"
+menu_display = ""
+
+items = raw_order_list.split(",")
+
+menu_display = "\n".join(items)
+
+print(menu_display)
+
+# Golden Rule: write it once, use it millions of times.
+
+def greet_barista():
+    print("Hello, barista!")
+
+greet_barista()
+
+def order_drink(drink, size):
+    print("Dispensing " + size + " " + drink)
+
+order_drink("espresso", "large")
+
+def add_tax(subtotal):
+    return subtotal * 1.08
+
+final_total = add_tax(10.0)
+print(final_total)
+
+def configure_system(device_name,/, model="core i9", *, gen=11):
+    """Print the device configuration."""
+    print(f"Configuring device: {device_name}")
+    print(f"Model: {model}")
+    print(f"Generation: {gen}")
+
+configure_system("Hp Elitebook", "core ultra i9", gen=17)
+
+def print_reciept(item, cost):
+    print(item + ": ₦" + str(cost))
+
+print_reciept("Espresso", 700.75)
+
+def cup_label(name, drink):
+    print(name + " ordered " + drink)
+cup_label("Chibueze", "Espresso")
+
