@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/l2euser/python_journey/Tn_drills/lessons/lesson4_1_4.py", line 7, in <module>
+    print(undefined_name)
+          ^^^^^^^^^^^^^^
+NameError: name 'undefined_name' is not defined
