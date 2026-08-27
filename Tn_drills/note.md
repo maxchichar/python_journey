@@ -1,0 +1,1 @@
+A function is a named, reuseable block of code that performs a specific, defined task.
